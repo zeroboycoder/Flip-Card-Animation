@@ -1,0 +1,68 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   font-size: 36px;
+   margin: 0%;
+}
+
+p {
+   font-size: 18px;
+   margin: 0;
+}
+
+.container {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container_card {
+   width: 200px;
+   height: 300px;
+}
+
+.container_card .card {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transition: all 0.8s ease-in-out;
+   transform-style: preserve-3d;
+}
+
+.container_card:hover .card {
+   transform: rotateY(180deg);
+}
+
+.card section {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 7px;
+}
+
+/* Front */
+.card .front {
+   color: white;
+   background-color: #2222d3;
+   text-align: center;
+}
+
+/* Back */
+.card .back {
+   color: white;
+   background-color: teal;
+   transform: rotateY(180deg);
+}
+
+.back p {
+   font-size: 24px;
+}
